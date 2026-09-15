@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <title>Galactic Registry - Planet Acquisition Form</title>
+</head>
+
+<body>
+  <section class="planet-purchase-section">
+    <h2>Acquire Your World</h2>
+  </section>
+  <form class="planet-form" onsubmit="window.location.href='https://www.nasa.gov'; return false;">
+    <fieldset>
+      <legend>Traveler Details</legend>
+      <div class="form-group">
+        <label for="firstName">First Name</label><input type="text" id="firstName" name="firstName"
+          placeholder="e.g., Dash" required>
+      </div>
+
+      <div class="form-group">
+
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname" placeholder="e.g., Dashtiy" required>
+
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="traveler@frequency.com" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Celestial Selection</legend>
+      <div class="form-group">
+        <label for="planetSelection">Choose Your Planet</label>
+        <select id="planetSelection" name="planetSelection" required>
+          <option value="" disabled selected>Select a destination...</option>
+          <option value="Planet-of-apes">Planet of the Apes</option>
+          <option value="sungarden">Sungarden</option>
+          <option value="mars">Mars (Terraformed)</option>
+          <option value="kepler">Kepler</option>
+          <option value="proxima">Proxima</option>
+          <option value="echo-prime">Echo Prime</option>
+          <option value="obsidian-ruins">Obsidian Ruins (Uncharted Sector)</option>
+          <option value="second-earth">Second Earth</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Security</legend>
+
+      <div class="form-group">
+        <label for="password">Registry Password</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="submit-btn">Initiate Transfer</button>
+  </form>
+
+</body>
+
+</html>

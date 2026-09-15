@@ -1,0 +1,113 @@
+:root {
+    --obsidian: #0a0a0c;
+    --stone-surface: #15151a;
+    --neon-glow: #00ffcc;
+    /* Ancient cyber-cyan */
+    --text-muted: #8892b0;
+}
+
+body {
+    background-color: var(--obsidian);
+    color: var(--text-muted);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2,
+legend {
+    font-family: 'Oswald', sans-serif;
+    color: var(--neon-glow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.planet-form {
+    background-color: var(--stone-surface);
+    padding: 40px;
+    border: 1px solid rgba(0, 255, 204, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(0, 255, 204, 0.02);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+fieldset {
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 5px;
+    color: #e6f1ff;
+    letter-spacing: 1px;
+}
+
+/* Styling the inputs to look like dark terminal boxes */
+.form-group input,
+.form-group select {
+    background-color: var(--obsidian);
+    color: var(--neon-glow);
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* The glow effect when you click inside */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--neon-glow);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+.form-group input:hover,
+.form-group select:hover {
+    border-color: var(--text-muted);
+    box-shadow: 0 0 100px rgba(1, 244, 215, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: transparent;
+    color: var(--neon-glow);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid var(--neon-glow);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--neon-glow);
+    color: var(--obsidian);
+    box-shadow: 0 0 20px var(--neon-glow);
+}
